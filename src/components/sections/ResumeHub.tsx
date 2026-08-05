@@ -43,13 +43,13 @@ export default function ResumeHub() {
                                 ))}
                             </div>
 
-                            <a href="/cv-swelam.pdf" download="Mohamed-Swelam-CV.pdf">
+                            <a href="/cv-swelam.jpg" download="Mohamed-Swelam-CV.jpg">
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="px-10 py-5 rounded-2xl bg-primary text-black font-bold text-lg flex items-center gap-4 neo-glow group"
                                 >
-                                    تحميل السيرة الذاتية (PDF)
+                                    تحميل السيرة الذاتية
                                     <Download className="group-hover:translate-y-1 transition-transform" />
                                 </motion.button>
                             </a>
@@ -58,10 +58,10 @@ export default function ResumeHub() {
                         <div className="relative">
                             <div className="glass-card bg-white/5 border-white/10 p-2 transform rotate-3 hover:rotate-0 transition-transform duration-500 shadow-2xl relative">
                                 <div className="aspect-[3/4] bg-neutral-900 rounded-lg overflow-hidden relative group/cv">
-                                    <iframe
-                                        src="/cv-swelam.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
-                                        className="w-full h-full border-none pointer-events-none"
-                                        title="Resume Preview"
+                                    <img
+                                        src="/cv-swelam.jpg"
+                                        className="w-full h-full object-cover object-top border-none"
+                                        alt="Resume Preview"
                                     />
                                     {/* Overlay to catch clicks and prevent iframe interaction while allowing the parent to handle hover */}
                                     <div className="absolute inset-0 z-10 bg-transparent" />
